@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Villa Chicken - Nuestra Carta</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#9d1b2d",
+                    "surface-container": "#efeeea",
+                    "primary": "#7a001a",
+                    "on-primary": "#ffffff",
+                    "background": "#fbf9f5",
+                    "surface-container-highest": "#e4e2de",
+                    "on-surface": "#1b1c1a",
+                    "on-secondary-container": "#795950",
+                    "on-surface-variant": "#594141",
+                    "on-tertiary-container": "#ffb37c",
+                    "inverse-surface": "#30312e",
+                    "tertiary-fixed": "#ffdcc5",
+                    "outline-variant": "#e0bfbe",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "on-tertiary-fixed": "#301400",
+                    "outline": "#8c7070",
+                    "surface-tint": "#b02a39",
+                    "secondary": "#77574d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#5d4037",
+                    "primary-fixed": "#ffdad9",
+                    "tertiary-fixed-dim": "#ffb783",
+                    "secondary-fixed": "#ffdbd0",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#803f00",
+                    "surface-container-low": "#f5f3ef",
+                    "tertiary": "#5d2d00",
+                    "primary-fixed-dim": "#ffb3b3",
+                    "on-background": "#1b1c1a",
+                    "surface": "#fbf9f5",
+                    "surface-variant": "#e4e2de",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#ffb3b3",
+                    "on-secondary-fixed": "#2c160e",
+                    "secondary-container": "#fed3c7",
+                    "surface-dim": "#dbdad6",
+                    "surface-bright": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#ffafaf",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#8f0e24",
+                    "on-primary-fixed": "#400009",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eae8e4",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary-fixed-dim": "#e7bdb1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Work Sans"],
+                    "label": ["Work Sans"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .rustic-plate-shadow {
+            box-shadow: 0 24px 40px -10px rgba(122, 0, 26, 0.06);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #7a001a 0%, #9d1b2d 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed-dim">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/80 dark:bg-[#1b1c1a]/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black uppercase text-[#9d1b2d] dark:text-[#ba1a1a] font-['Epilogue'] tracking-tight">
+                Villa Chicken
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-['Work_Sans'] text-sm">
+<a class="text-[#77574d] dark:text-[#e4e2de] hover:text-[#9d1b2d] transition-all duration-300 hover:opacity-80" href="#">Home</a>
+<a class="text-[#9d1b2d] font-bold border-b-2 border-[#9d1b2d] pb-1 transition-all duration-300 hover:opacity-80" href="#">Ordena Aquí</a>
+<a class="text-[#77574d] dark:text-[#e4e2de] hover:text-[#9d1b2d] transition-all duration-300 hover:opacity-80" href="#">Promotions</a>
+<a class="text-[#77574d] dark:text-[#e4e2de] hover:text-[#9d1b2d] transition-all duration-300 hover:opacity-80" href="#">Locations</a>
+<a class="text-[#77574d] dark:text-[#e4e2de] hover:text-[#9d1b2d] transition-all duration-300 hover:opacity-80" href="#">Reservations</a>
+</div>
+<div class="flex items-center gap-4 text-[#9d1b2d]">
+<button class="transition-transform scale-95 active:scale-90 p-2">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="transition-transform scale-95 active:scale-90 p-2">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20 max-w-7xl mx-auto px-6">
+<!-- Section Header -->
+<header class="mb-16 mt-8">
+<h1 class="font-headline text-5xl md:text-7xl font-black tracking-tight text-primary mb-4 max-w-2xl leading-[1.1]">
+                Nuestra Tradición a la Mesa
+            </h1>
+<p class="text-secondary text-lg md:text-xl font-light max-w-xl">
+                Selecciona una categoría para explorar el sabor único de nuestra leña y carbón.
+            </p>
+</header>
+<!-- Category Bento Grid / Asymmetric Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Category: Parrillas Especiales (Featured Large) -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low h-[450px] transition-all duration-500 hover:bg-surface-container-highest rustic-plate-shadow">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="overhead view of a rustic wooden table with various grilled meats, sausages, and side dishes in cast iron pans with warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-U8PKwd49-DHfZOxuaM9d1G5xoGkiMCputrljQcfpl611XcHOqZL0HWhMjkNhhUFZm2Z6IHsaxLj3VeiaXL9qMK__MAmJDG_IwlL0Z-WGMvdh02pL4Z-Dp4WxCCJmFzDDMnfF3dhA4peFIDDsWG-icydcW8f4498OTNCMRp2y1wmJw8dWc9mAXkKs1U77ZECVpEp0j8PSYexrK9cuSOFONa5vstCIeZP1DX9tMS_8Bawuzo0WBRy7RK061TN6NgvmBjRgbuPOp5kA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-10 z-10">
+<span class="bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold mb-4 inline-block uppercase tracking-widest">Lo Más Pedido</span>
+<h2 class="font-headline text-4xl text-white font-extrabold mb-2">Parrillas Especiales</h2>
+<p class="text-white/80 max-w-md font-light">Cortes seleccionados madurados y asados al punto exacto de perfección.</p>
+</div>
+</div>
+</div>
+<!-- Category: Ensaladas (Vertical Tall) -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low h-full min-h-[450px] transition-all duration-500 hover:bg-surface-container-highest rustic-plate-shadow">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" data-alt="vibrant and colorful fresh mediterranean salad with green leaves, tomatoes, and chickpeas in a ceramic bowl on a rustic surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCats5ywR3PfzQokA7A3yOCWJDzjAmERgIzvCpDJ9sS1U3TraUgzdICSwGdKWgQmrftSamWEgHht-vZboQzHNlQ5gNeSxMkFerv0DVn2fi_uBCVOKOgvksrXqf9bVziq_zlOqhK25vD7Ah-nv2bQGfmL5ivDlB470jQWLxuF5hjXZdusdJtT5dr3zTb2HFSK7Yj1HpR6eNk6bOnQu30TADjglJ79bGFAEWiFIF2jPtEiG9lhzDd8Z86ENamQ3xS04Ti9-xHVaoU1Wf5"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 z-10">
+<h2 class="font-headline text-3xl text-white font-extrabold mb-1">Ensaladas</h2>
+<p class="text-white/70 text-sm font-medium">Frescura de la huerta a tu plato.</p>
+</div>
+</div>
+</div>
+<!-- Category: Al Grill (Small Square) -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low h-[300px] transition-all duration-500 hover:bg-surface-container-highest rustic-plate-shadow">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" data-alt="close-up of succulent rotisserie chicken with crispy golden skin being carved, steam rising, warm indoor kitchen setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQrkmBTacwrTtUyH48sTd75DB7Nzj66I8GUk1OCNiPbujyiCafY2jXS2fGTjAZTySu_1OqNJDZupcOKVX08zHx4JFSuwJlKzgnssJG9Q5uL306H1QL3E_NEUQxHh7QC85APwYomtTq8pfObRJh2N6eXi9HkrcqVJDOv2J2yxBFEQUE9wNfpt76gmzLmdLj0CCDNXEP6avq3lxJLxVI-D269uKw3NUep2sx1LARjIiYwxaumpoTKU91JXjDPQp40alZM3_4z2QSgb5b"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 z-10">
+<h2 class="font-headline text-2xl text-white font-extrabold mb-1">Al Grill</h2>
+</div>
+</div>
+</div>
+<!-- Category: Anticuchos y Piqueos (Asymmetric Block) -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low h-[300px] transition-all duration-500 hover:bg-surface-container-highest rustic-plate-shadow">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" data-alt="peruvian style anticuchos beef heart skewers grilled on charcoal with golden potatoes and corn, rustic street food presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnh2J1fqX0EVHB4XUVOH3xZJHwGnvsHJgx_Vv46ZfUvR7V7hh0pRR3XgauK5oiFE7c9bTdE23FpNcnSjsM1yr0VVKHsBOXiDqsBED5r-unZpwPVi_MgWtf8sBRHPwvkxuRbCjbHFlbC4EjGHieRimmEAPUQJlYhqqRaRQGwQEi8yN3_3YtCVXPcuERopHNusZLaBsvDaK-GJzSnAAvW1kuHFMXs32d2uW3XulkTyuFZ7uo90WuLeckK9kD3vDdVUG4v8EB4qkkKq_7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#7a001a]/80 via-transparent to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 z-10">
+<h2 class="font-headline text-3xl text-white font-extrabold mb-1">Anticuchos y Piqueos</h2>
+<p class="text-white/80 font-light">El sabor tradicional peruano para compartir.</p>
+</div>
+</div>
+</div>
+<!-- Category: Guarniciones (Modern Minimal Card) -->
+<div class="md:col-span-6 group cursor-pointer">
+<div class="flex flex-col h-full bg-surface-container-low rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-4px] rustic-plate-shadow">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" data-alt="crispy golden french fries and creamy peruvian huancaina sauce on a rustic ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD1lpewCftYvT_To0LAhEcRXepTyzEM9maaGZKQfM17EoGJLj_L9Il4x8cEuEq5m4VgPSyt5_JRsGHiaHkH_tjewXkkME0jumOxWfYQQEgN9lTlkHcBgBh8gS564hQ-hr6lQeFabSpQdrKQTlIUsyKY3_A_7q06Wd2husGSFnJL2cqFT4W1qpyFP2KJ8a3mEbn3WzzIFtoL8jT02o_JoaD2pQbdtL4RayuWl_2jJdOcC3xpV-zpo2UMQ6qm8xfBAtIvuWvfeuzsGR1"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-center">
+<div>
+<h2 class="font-headline text-2xl font-bold text-primary">Guarniciones</h2>
+<p class="text-secondary text-sm mt-1">El acompañamiento perfecto.</p>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="restaurant">restaurant</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Category: Postres (Editorial Style) -->
+<div class="md:col-span-6 group cursor-pointer">
+<div class="flex flex-col h-full bg-surface-container-low rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-4px] rustic-plate-shadow">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" data-alt="decadent chocolate lava cake with a melting center served with vanilla ice cream and mint leaf on a warm stoneware plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnTWOrX_N8bL9q9pzt1ucbsS_D_MPj5qtQbFcyjs9B7SeqNZ-qteCUQy8-wwwiSc2HcVqiJEYDiiC3EqPsfRUDyuC67gf3ExRFgFFBUZisgvIS-npUF766nlWQ27E8qiRxgiEeyooecFXV1vpoTZto8ytG398NImqGFZPdlx9YaxvtnXe1QXG2T84EdDcWO___hQDFZwYEqT9qox1IxUvGkL0D0dtxy-pZed5ecusdCcC6LczdUAboYQsaSYQqBZA_MPQ0pci_e1lO"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-center">
+<div>
+<h2 class="font-headline text-2xl font-bold text-primary">Postres</h2>
+<p class="text-secondary text-sm mt-1">Dulces momentos finales.</p>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="icecream">icecream</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Section: Asymmetric "Rustic Plate" Pattern -->
+<section class="mt-32 relative">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-fixed opacity-20 rounded-full blur-3xl"></div>
+<div class="bg-surface-container-high w-full h-[400px] absolute translate-x-12 translate-y-12 rounded-xl z-0"></div>
+<img class="relative z-10 w-full h-[450px] object-cover rounded-xl rustic-plate-shadow" data-alt="gourmet plated steak dish with rosemary sprig and red wine reduction sauce, soft cinematic lighting, fine dining presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk_9MJwlMRT3NMVTAdmJSYTH5m57iw-Tgu7N5lVHKWX5UbWOYrRw7J7IG9RknMMjBhyr7ZFhh1RB1bmgwSiv-_IpgKvqv_jaoip2mixWwmFuEzD3mmKOuh9DlKwLGUsn4Lb6-9knjzkHyiDeoUG1U4HNFWRtxpmTVUZIwL7Nm0E5I0IP5ar42sMzw0cqc8LWbMI8NzEAMJTHJlFy96DpdTkFFQrloO-gUiY18ZRmn6USq3h86JQgHB6TYkrdpSzPSU2E33C9nHK03z"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-[0.2em] text-sm mb-6 block">Especialidad de la Casa</span>
+<h2 class="font-headline text-5xl font-black text-on-surface mb-6 leading-tight">Pollo a la Brasa: Un Legado de Sabor</h2>
+<p class="text-secondary text-lg mb-8 leading-relaxed">
+                        Nuestro secreto reside en la mezcla perfecta de maderas nobles y una maceración de 48 horas que garantiza jugosidad en cada bocado. Una receta que ha unido familias por generaciones.
+                    </p>
+<button class="hero-gradient text-on-primary px-8 py-4 rounded-xl font-bold transition-all duration-300 hover:opacity-90 active:scale-95 rustic-plate-shadow">
+                        Explorar Menú Completo
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#f5f3ef] dark:bg-[#1b1c1a] w-full py-12 px-8 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto font-['Work_Sans'] text-sm">
+<div class="space-y-4">
+<div class="text-lg font-bold text-[#9d1b2d]">Villa Chicken</div>
+<p class="text-[#77574d] dark:text-[#e4e2de] max-w-xs">Sabor que nos une, tradición que nos define. El mejor pollo a la brasa y parrillas en un ambiente único.</p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-bold text-on-surface mb-2">Enlaces Rápidos</span>
+<a class="text-[#77574d] dark:text-[#e4e2de] hover:text-[#9d1b2d] transition-colors" href="#">Facebook</a>
+<a class="text-[#77574d] dark:text-[#e4e2de] hover:text-[#9d1b2d] transition-colors" href="#">Instagram</a>
+<a class="text-[#77574d] dark:text-[#e4e2de] hover:text-[#9d1b2d] transition-colors" href="#">WhatsApp</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-bold text-on-surface mb-2">Legal</span>
+<a class="text-[#77574d] dark:text-[#e4e2de] hover:text-[#9d1b2d] transition-colors" href="#">Contacto</a>
+<a class="text-[#77574d] dark:text-[#e4e2de] hover:text-[#9d1b2d] transition-colors" href="#">Privacidad</a>
+<p class="mt-4 text-xs text-[#77574d]">© 2024 Villa Chicken. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+<!-- Order Now FAB (Contextual) -->
+<div class="fixed bottom-8 right-8 z-50">
+<button class="hero-gradient text-on-primary flex items-center gap-3 px-6 py-4 rounded-full font-bold shadow-2xl transition-all hover:scale-105 active:scale-95" style="box-shadow: 0 24px 40px rgba(122, 0, 26, 0.25);">
+<span class="material-symbols-outlined" data-icon="shopping_basket">shopping_basket</span>
+<span>Pedir Ahora</span>
+</button>
+</div>
+</body></html>
