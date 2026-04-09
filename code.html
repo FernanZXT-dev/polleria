@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Work_Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#9d1b2d",
+                    "surface-container": "#efeeea",
+                    "primary": "#7a001a",
+                    "on-primary": "#ffffff",
+                    "background": "#fbf9f5",
+                    "surface-container-highest": "#e4e2de",
+                    "on-surface": "#1b1c1a",
+                    "on-secondary-container": "#795950",
+                    "on-surface-variant": "#594141",
+                    "on-tertiary-container": "#ffb37c",
+                    "inverse-surface": "#30312e",
+                    "tertiary-fixed": "#ffdcc5",
+                    "outline-variant": "#e0bfbe",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "on-tertiary-fixed": "#301400",
+                    "outline": "#8c7070",
+                    "surface-tint": "#b02a39",
+                    "secondary": "#77574d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#5d4037",
+                    "primary-fixed": "#ffdad9",
+                    "tertiary-fixed-dim": "#ffb783",
+                    "secondary-fixed": "#ffdbd0",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#803f00",
+                    "surface-container-low": "#f5f3ef",
+                    "tertiary": "#5d2d00",
+                    "primary-fixed-dim": "#ffb3b3",
+                    "on-background": "#1b1c1a",
+                    "surface": "#fbf9f5",
+                    "surface-variant": "#e4e2de",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#ffb3b3",
+                    "on-secondary-fixed": "#2c160e",
+                    "secondary-container": "#fed3c7",
+                    "surface-dim": "#dbdad6",
+                    "surface-bright": "#fbf9f5",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#ffafaf",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#8f0e24",
+                    "on-primary-fixed": "#400009",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eae8e4",
+                    "inverse-on-surface": "#f2f0ed",
+                    "secondary-fixed-dim": "#e7bdb1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Work Sans"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .rustic-plate-shadow {
+            box-shadow: 0 24px 40px -10px rgba(122, 0, 26, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-primary">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black uppercase text-[#9d1b2d] font-headline tracking-tight">
+                Villa Chicken
+            </div>
+<div class="hidden md:flex items-center gap-8 font-headline tracking-tight">
+<a class="text-[#77574d] hover:text-[#9d1b2d] transition-all duration-300" href="#">Home</a>
+<a class="text-[#9d1b2d] font-bold border-b-2 border-[#9d1b2d] pb-1" href="#">Ordena Aquí</a>
+<a class="text-[#77574d] hover:text-[#9d1b2d] transition-all duration-300" href="#">Promotions</a>
+<a class="text-[#77574d] hover:text-[#9d1b2d] transition-all duration-300" href="#">Locations</a>
+<a class="text-[#77574d] hover:text-[#9d1b2d] transition-all duration-300" href="#">Reservations</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#77574d] transition-transform scale-95 active:scale-90" data-icon="shopping_cart">shopping_cart</button>
+<button class="material-symbols-outlined text-[#77574d] transition-transform scale-95 active:scale-90" data-icon="account_circle">account_circle</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Breadcrumb & Back Link -->
+<div class="mb-12">
+<a class="group inline-flex items-center gap-2 text-secondary font-medium transition-colors hover:text-primary" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="arrow_back">arrow_back</span>
+<span class="font-label">Back to Categories</span>
+</a>
+</div>
+<!-- Editorial Header Section -->
+<div class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
+<div>
+<h1 class="text-6xl md:text-8xl font-black font-headline text-primary tracking-tighter leading-none mb-6">
+                    Ensaladas
+                </h1>
+<p class="text-xl text-secondary max-w-md leading-relaxed">
+                    Freshness harvested from the field to your table. Our salads are the perfect crisp accompaniment to our wood-fired rotisserie chicken.
+                </p>
+</div>
+<div class="flex flex-wrap gap-3 md:justify-end">
+<span class="px-6 py-2 rounded-full bg-tertiary text-on-tertiary-container font-label text-sm">All Salads</span>
+<span class="px-6 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm hover:bg-surface-container-highest transition-colors cursor-pointer">Vegetarian</span>
+<span class="px-6 py-2 rounded-full bg-surface-variant text-on-surface-variant font-label text-sm hover:bg-surface-container-highest transition-colors cursor-pointer">Low Carb</span>
+</div>
+</div>
+<!-- Menu Grid: Asymmetric Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-24 gap-x-12">
+<!-- Item 1: Rustic Plate Style -->
+<div class="relative group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 transition-transform duration-500 group-hover:-translate-y-2 rustic-plate-shadow">
+<img alt="Classic Caesar Salad" class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Close-up of a gourmet Caesar salad with grilled chicken strips, crisp romaine lettuce, artisanal croutons, and shaved parmesan in warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZiycLy7lOnb_IO4T6P-jSYxocM98R_47ytL09I8S0xIe7ARLedcipe7xmAX0jVQw_SUgN6oa8DLX_Pp1OAwHTqGJAXujd8_j9pApYLi90bF8eS3vcRsCCLdaGxwYhJ86YEYWyJSFn54byFBTEh2_Dh6gwyQW4FhtIhRvzB1eitzXQsGETHIB0RqR0kPC_rX_bJjec-ON9hbDWwF1s_AmAbaPilpBuZZ8_v-d0S3iliC5zuMP2J9-jVwY8hwRvlNvrlZm83-gpMvWa"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-bold font-headline text-on-surface">Ensalada César</h3>
+<span class="text-xl font-bold text-primary">S/ 32.00</span>
+</div>
+<p class="text-secondary leading-snug">
+                        Fresh romaine hearts, hand-torn sourdough croutons, aged Parmesan, and our signature creamy garlic dressing with a hint of lemon.
+                    </p>
+<button class="mt-4 w-full py-4 rounded-lg bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold tracking-wide flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="add_circle">add_circle</span>
+                        Add to Order
+                    </button>
+</div>
+</div>
+<!-- Item 2: Rustic Plate Style -->
+<div class="relative group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 transition-transform duration-500 group-hover:-translate-y-2 rustic-plate-shadow">
+<img alt="Ensalada de la Casa" class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-opacity" data-alt="A vibrant healthy salad bowl with roasted sweet potatoes, kale, quinoa, avocado slices, and seeds on a rustic wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQoL3n4guJfYP43sfiXUMvVoPm7TPKplqYzR0s83kbi2jgRUKxPCXJXloDj-SIV_MrdBFRCy_ky1UdDbZJrzxOiWq08iboBbjSap778IRSjluvWpNB4gcirosJGMPuCqRYJ0goAAgAi0Fob6TMBvdXXwZRTVNSe7guO7VUAmfZI3f1TZGRNYydS0zSkakM3HCDlgwzedk8bKZZRjXQBIIdaaXwBMo0fYSxZjqSdaIdUe3GPjkxCti_WVwlzgHDhf9HIgLaFbu4YP0B"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-bold font-headline text-on-surface">Ensalada de la Casa</h3>
+<span class="text-xl font-bold text-primary">S/ 35.00</span>
+</div>
+<p class="text-secondary leading-snug">
+                        Our signature mix: field greens, avocado, toasted quinoa, roasted sweet potatoes, and a honey-mustard vinaigrette.
+                    </p>
+<button class="mt-4 w-full py-4 rounded-lg bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold tracking-wide flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="add_circle">add_circle</span>
+                        Add to Order
+                    </button>
+</div>
+</div>
+<!-- Item 3: Rustic Plate Style -->
+<div class="relative group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 transition-transform duration-500 group-hover:-translate-y-2 rustic-plate-shadow">
+<img alt="Ensalada Mixta" class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Fresh mediterranean salad with cherry tomatoes, cucumbers, red onions, olives and feta cheese, bright natural window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-qu5BiCbLIAYtJzoz0pYuFQg6oYrM9NzSR_8qmDZTbKA-InxQ9ApBbv1ssj1orsEyc7USDXrTlyfgmiGiyro_81MVb-Vd5fsbbsUtqta2cggehIo3gi15nXxRYr7qcBWDNb8vVszYAhimvbcraTk4vVRvoYDjnNK0tWjgOXNGqQjk7iAWMIdpYzU4HK1JkmI9MDIefSbMkT_RX9bRIvwJbL_jjOQTzaW5mh4eJqtUt3aVemwzdN1S1eeMWrs54XhwRV8iom3VRaMh"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-bold font-headline text-on-surface">Ensalada Mixta</h3>
+<span class="text-xl font-bold text-primary">S/ 28.00</span>
+</div>
+<p class="text-secondary leading-snug">
+                        The timeless classic. Colorful bell peppers, farm-fresh cucumbers, heirloom tomatoes, and red onions with extra virgin olive oil.
+                    </p>
+<button class="mt-4 w-full py-4 rounded-lg bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold tracking-wide flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="add_circle">add_circle</span>
+                        Add to Order
+                    </button>
+</div>
+</div>
+<!-- Item 4: Rustic Plate Style -->
+<div class="relative group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 transition-transform duration-500 group-hover:-translate-y-2 rustic-plate-shadow">
+<img alt="Ensalada Caprese" class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Fresh caprese salad with thick slices of buffalo mozzarella, ripe red tomatoes, and fresh basil leaves drizzled with balsamic glaze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBEPanJ_VidJ0dNawQVIPcpR4LFkM0aJGFKeOrkG7Q1EfXgoV0jm-7YhzpeyGA61G8sd_3tR5EjZ0pm1Q01xeL_6Xf6cN0GUFCXNnfgGGwlEUqvXxFn4M3DoJDyP8HfPU_oLDAODY0IHqQptvcpUCojqQHsLmP1WaD2s401SGkKsXRiNrBmAazaG4NePluHMuuK4QyfjHHXqiy6Ox_eSTVdtk51iuURvMgRZHCoI7Po6b7o3WjNzLv3CWVc7ZpwXYjW7F8Z7kfxp2i"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-bold font-headline text-on-surface">Caprese de la Villa</h3>
+<span class="text-xl font-bold text-primary">S/ 38.00</span>
+</div>
+<p class="text-secondary leading-snug">
+                        Thick slices of fresh mozzarella and garden-ripe tomatoes with a balsamic reduction and organic basil pesto.
+                    </p>
+<button class="mt-4 w-full py-4 rounded-lg bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold tracking-wide flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="add_circle">add_circle</span>
+                        Add to Order
+                    </button>
+</div>
+</div>
+<!-- Item 5: Rustic Plate Style -->
+<div class="relative group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 transition-transform duration-500 group-hover:-translate-y-2 rustic-plate-shadow">
+<img alt="Ensalada Power" class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Nutrient-dense salad with broccoli, nuts, cranberries, and a light creamy dressing in an artisanal ceramic bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo5DIx78iyC-Oh5V4w2V13_XEzmqLgsUIOkc92N97ZdiguVuBeS2dIa4Qv6xUJkX6E6PaGM6fWomJoDvGNxGEBtS3HcbBS_VbYagDFSJfry_uiYnXX9_b30GlLgvbwbRVCQeGfcMWORSvnfd4SDx9E-jhh9nHByy2ah3zd-NQ_lnaBcHcEX4WaaAFWFiM6ywhE7yNJSH2DSBDAjc-xdORpUZAOuOtpzGLjg40WE7RnI-EZ7XpeUtVqPnh2RWlc7o3Qx3PQKQ0-EGvR"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-bold font-headline text-on-surface">Ensalada Power</h3>
+<span class="text-xl font-bold text-primary">S/ 36.00</span>
+</div>
+<p class="text-secondary leading-snug">
+                        Broccoli florets, toasted almonds, dried cranberries, and pumpkin seeds with a yogurt-based light dressing.
+                    </p>
+<button class="mt-4 w-full py-4 rounded-lg bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold tracking-wide flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="add_circle">add_circle</span>
+                        Add to Order
+                    </button>
+</div>
+</div>
+<!-- Item 6: Rustic Plate Style -->
+<div class="relative group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6 transition-transform duration-500 group-hover:-translate-y-2 rustic-plate-shadow">
+<img alt="Ensalada de Frutos Rojos" class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Gourmet salad with fresh strawberries, blueberries, goat cheese, and walnuts on a bed of baby spinach with dark mood lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8sXWQybRRkUCLvYztQ4mVBY2H9n_TvUz_P8Fdx7F0yhz8FWRKIuRMQgHfKQ8lBBUZCF2bSDyiaXDOAknmeHpYbky_LnwI78v9wk-w76OP-kLpWPEfYkiPq60r8Qg551oj_t_wPZVnnuCsAN6wMyZFU9lp54PE-eVye1ZV4uLAgs8mqwfom3jjVUhRzulMCf-0WMqwa5jz0P1lv_VoUnICE-_LleDSaAtlGJFv7E6M9youuXlteW9a6Eqgmj0lToMuiMv4jN6eg6mg"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-bold font-headline text-on-surface">Frutos del Bosque</h3>
+<span class="text-xl font-bold text-primary">S/ 34.00</span>
+</div>
+<p class="text-secondary leading-snug">
+                        Baby spinach, fresh strawberries, creamy goat cheese, and candied walnuts with a red fruit reduction.
+                    </p>
+<button class="mt-4 w-full py-4 rounded-lg bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold tracking-wide flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="add_circle">add_circle</span>
+                        Add to Order
+                    </button>
+</div>
+</div>
+</div>
+<!-- Featured Section: The Rustic Plate Asymmetry -->
+<section class="mt-40 bg-surface-container-low rounded-3xl p-12 relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
+<div class="order-2 lg:order-1">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Seasonal Special</span>
+<h2 class="text-5xl font-black font-headline text-on-surface leading-tight mb-6">
+                        Freshness from the Orchard
+                    </h2>
+<p class="text-secondary text-lg mb-8 max-w-lg">
+                        Every morning, our local partners deliver organic greens harvested at dawn. We believe the quality of our salads reflects the soul of the farm.
+                    </p>
+<button class="px-8 py-4 rounded-lg bg-surface-container-highest text-primary font-bold hover:bg-surface-variant transition-colors">
+                        Learn about our sourcing
+                    </button>
+</div>
+<div class="order-1 lg:order-2 relative">
+<div class="w-full h-80 lg:h-96 rounded-2xl overflow-hidden shadow-2xl -rotate-2 transform hover:rotate-0 transition-transform duration-700">
+<img alt="Fresh ingredients" class="w-full h-full object-cover" data-alt="Atmospheric shot of fresh garden vegetables, tomatoes, and herbs on a rustic wooden board with soft atmospheric steam and warm sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApxUjZZUIIArPM49QxadDtRRBGbJw3SrhDK0BX4P2YTU0yI0EOwDhUKezopu4trno-U8LqQ3-oWmc_nV3-wTHIudLT9r97WMdKsiOUJ5qU1ThSjRGspV5t8HtkYxtlCF0NKyJM0r6whb-lq0BMX6xjxo3d8PnrKZ7LZEjMbUVUPH6K4oXlvXTRybtJMgwI42DzXFlW6vYdx7DnfHFn_DMHAuwjNQrK7TQ-Ua1NKD8UX_aZ8HPgoOomKsyOoFP6MAJMpcdwgmhwWt8N"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#f5f3ef] w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-lg font-bold text-[#9d1b2d] font-headline uppercase tracking-wider">Villa Chicken</div>
+<p class="text-[#77574d] font-body text-sm max-w-xs">
+                    Crafting the finest wood-fired experiences since 2012. Authentic flavors, modern lifestyle.
+                </p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-headline font-bold text-on-surface mb-2">Connect</span>
+<a class="text-[#77574d] hover:text-[#9d1b2d] transition-colors font-body text-sm" href="#">Facebook</a>
+<a class="text-[#77574d] hover:text-[#9d1b2d] transition-colors font-body text-sm" href="#">Instagram</a>
+<a class="text-[#77574d] hover:text-[#9d1b2d] transition-colors font-body text-sm" href="#">WhatsApp</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-headline font-bold text-on-surface mb-2">Company</span>
+<a class="text-[#77574d] hover:text-[#9d1b2d] transition-colors font-body text-sm" href="#">Contacto</a>
+<a class="text-[#77574d] hover:text-[#9d1b2d] transition-colors font-body text-sm" href="#">Privacidad</a>
+<p class="text-[#77574d] text-xs mt-4">© 2024 Villa Chicken. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+</body></html>
